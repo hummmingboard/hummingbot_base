@@ -15,23 +15,23 @@ HBOT_BROKER_ID = "Hummingbot"
 DEFAULT_TIME_IN_FORCE = "GTC"
 
 REST_URLS = {
-    "bybit_perpetual_main": "https://api.bybit.com/",
-    "bybit_perpetual_testnet": "https://api-testnet.bybit.com/"
+    "bybit_perpetual_main": "https://api.bybit.com",
+    "bybit_perpetual_testnet": "https://api-demo.bybit.com"
 }
 
 WSS_PUBLIC_URL_LINEAR = {
     "bybit_perpetual_main": "wss://stream.bybit.com/v5/public/linear",
-    "bybit_perpetual_testnet": "wss://stream-testnet.bybit.com/v5/public/linear"
+    "bybit_perpetual_testnet": "wss://stream-demo.bybit.com/v5/public/linear"
 }
 
 WSS_PUBLIC_URL_INVERSE = {
     "bybit_perpetual_main": "wss://stream.bybit.com/v5/public/linear",
-    "bybit_perpetual_testnet": "wss://stream-testnet.bybit.com/v5/public/linear"
+    "bybit_perpetual_testnet": "wss://stream-demo.bybit.com/v5/public/linear"
 }
 
 WSS_PRIVATE_URL = {
     "bybit_perpetual_main": "wss://stream.bybit.com/v5/private",
-    "bybit_perpetual_testnet": "wss://stream-testnet.bybit.com/v5/private"
+    "bybit_perpetual_testnet": "wss://stream-demo.bybit.com/v5/private"
 }
 
 
@@ -118,6 +118,12 @@ ORDER_STATE = {
     "Filled": OrderState.FILLED,
     "Cancelled": OrderState.CANCELED,
     "Rejected": OrderState.FAILED,
+}
+
+ACCOUNT_TYPE = {
+    "REGULAR": 1,
+    "UNIFIED": 3,
+    "UTA_PRO": 4
 }
 
 WS_HEARTBEAT_TIME_INTERVAL = 20
